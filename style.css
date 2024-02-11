@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+.logo{
+  margin: 25px;
+  width: 90px;
+}
+
+.content{
+  margin: 30px;
+}
+
+.title, .lighter{
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+.title{
+  color: hsl(0, 6%, 24%);
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.lighter{
+  color: hsl(0, 36%, 70%);
+  font-weight: 200;
+}
+
+.small-text{
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.input-email{
+  border: 1px solid hsl(0, 20%, 88%);
+  border-radius: 30px;  
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.input-email input, .input-email button{
+  border: none;
+}
+
+.input-email input{
+  min-width: 250px;
+  height: 45px;
+  font-size: 12px;
+  margin-left: 15px;
+  background:transparent;
+}
+
+
+.input-email input::placeholder{
+  color: #edd3d3 ;
+}
+.input-email input:focus{
+  outline: 0;
+}
+
+button{
+  background-color: #f8bfbf;
+  width: 20%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 50px;
+  position: absolute;
+}
+
+button:hover{
+  background: #eca3a3;
+  box-shadow: 1px 1px 10px #f8bfbf;
+}
+
+.message{
+  color: red;
+  font-size: 12px;
+  margin: 10px;
+  visibility: hidden;
+}
+/* responsividade para telas maiores */
+@media (min-width: 700px){
+  body{
+    position: relative;
+  }
+
+  .logo{
+    width: 110px;
+    margin: 5% 10% ;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .content{
+    width: 430px;
+    margin: 0 auto;
+    position: absolute;
+    left: 10%;
+  }
+
+  .banner{
+    position: absolute;
+    top: 0;
+  }
+
+  .title, .lighter{
+    font-size: 56px;
+    text-align: left;
+  }
+
+  .small-text{
+    text-align: left;
+  }
+}
+
